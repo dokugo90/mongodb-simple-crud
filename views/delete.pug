@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/styles/style.css")
+        title Database
+    body
+        form(action="/delete", method="POST") 
+            h1 Enter your name to delete from database
+            label(for="name") Name:
+            input(type="text", name="name") 
+            br
+            br
+            button(type="submit") Delete
+            br
+            br
+            a(href="/readAll") Read All 
+            br
+            br
+            a(href="/") View more possible routes 
